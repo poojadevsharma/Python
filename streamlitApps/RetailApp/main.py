@@ -2,13 +2,16 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-
+stream_lit=True
 
 st.title(':blue[Retail Data Analysis]')
-
-df=pd.read_csv("/mount/src/python/streamlitApps/RetailApp/data/retail_data.csv")
-
+if stream_lit==True:
+    df=pd.read_csv("/mount/src/python/streamlitApps/RetailApp/data/retail_data.csv")
+else:
+    df=pd.read_csv("/data/retail_data.csv")
+    
 st.header('Total Number of Transactions')
+    
 ##total number of transactions
 
 ndf=df.loc[df['Transaction_ID'].isnull()]
