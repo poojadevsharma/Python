@@ -6,7 +6,7 @@ import plotly.express as px
 
 st.title(':blue[Retail Data Analysis]')
 
-df=pd.read_csv('retail_data.csv')
+df=pd.read_csv("\retail_data.csv")
 
 st.header('Total Number of Transactions')
 ##total number of transactions
