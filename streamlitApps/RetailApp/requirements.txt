@@ -2,4 +2,3 @@ numpy
 pandas
 streamlit
 plotly
-retail_data1.csv
